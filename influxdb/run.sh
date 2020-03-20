@@ -1,0 +1,1 @@
+docker run  --name=influxdb --restart=unless-stopped -p 8086:8086 -v /home/webuser/dev/influxdb:/var/lib/influxdb -v //home/webuser/dev/influxdb/influxdb.conf:/etc/influxdb/influxdb.conf:ro influxdb -config /etc/influxdb/influxdb.conf

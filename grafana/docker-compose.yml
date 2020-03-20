@@ -1,0 +1,9 @@
+telegraf:
+  image: grafana/grafana:latest
+  container_name: grafana
+  restart: always
+  ports: 
+    - 3000:3000
+  volumes:
+    - grafana:/var/lib/grafana
+    - /var/run/docker.sock:/var/run/docker.sock
